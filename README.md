@@ -4,7 +4,32 @@ This email generator is developed in python using langchain and designed to gene
 
 ## Prerequisites
 
-Make sure you have Python installed on your system.
+1.  **Make sure you have Python installed on your system.**
+  - Download Python from [Microsoft Store](https://www.microsoft.com/store/productId/9NCVDN91XZQP?ocid=pdpshare) or from the [official Python website](https://www.python.org/downloads/).
+
+2.  **Add Python to System Path**:
+
+- Ensure Python is added to your system path. By default, Python is usually located at:
+
+```
+
+C:\Users\[Your Username]\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\Scripts
+
+```
+
+- To add Python to your path:
+
+- Open **Environment Variables** > **System Variables** > **Path** > **Edit**.
+
+- Add the path to your Python directory containing `ipython.exe` (usually in the folder listed above).
+
+- Click **OK** to save.
+
+3.  **Create Groq cloud api key**:
+- Download Python from [Groq cloud api key](https://www.microsoft.com/store/productId/9NCVDN91XZQP?ocid=pdpshare).
+- Add that api key in Generator.py 
+    
+
 
 ## Steps to Run the Project
 
