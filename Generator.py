@@ -6,7 +6,7 @@ import chromadb
 
 model = ChatGroq(
     temperature = 0,
-    groq_api_key = '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',
+    groq_api_key = '',
     model_name = "llama-3.3-70b-versatile"
 )
 job_page = input("Enter job description url : ")
