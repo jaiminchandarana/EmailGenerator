@@ -1,3 +1,4 @@
 langchain-groq 
 langchain 
 langchain-community
+moviepy==1.0.3
