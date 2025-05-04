@@ -92,12 +92,7 @@ if st.button("Generate Cold Email"):
             )
 
             chain_email = prompt_email | model
-            if not profile_links:
-                res_email = chain_email.invoke({
-                "job_description": str(job),
-                "name": name,
-                "position": position
-            })
+            
             res_email = chain_email.invoke({
                 "job_description": str(job),
                 "link": str(profile_links),
