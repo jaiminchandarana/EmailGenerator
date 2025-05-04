@@ -10,11 +10,11 @@ st.markdown("This app scrapes a career/job description page and creates a cold e
 
 # Inputs
 job_page = st.text_input("Enter job description URL")
-name = st.text_input("Enter your name", value="Jaimin")
-position = st.text_input("Enter your current position", value="Data Analyst")
+name = st.text_input("Enter your name", value="Enter your name :")
+position = st.text_input("Enter your current position", value="Enter your designation :")
 linkedin = st.text_input("Enter your LinkedIn profile URL")
 github = st.text_input("Enter your GitHub profile URL")
-groq_api_key = st.text_input("Enter your Groq API Key", type="password")
+groq_api_key = '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'
 
 if st.button("Generate Cold Email"):
     if not job_page or not name or not position or not linkedin or not github or not groq_api_key:
