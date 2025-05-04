@@ -1,3 +1,4 @@
 langchain-groq 
 langchain 
 langchain-community
+bs4
