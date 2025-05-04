@@ -65,10 +65,11 @@ if st.button("Generate Cold Email"):
 
             # Profile details
             profile_links = []
-            if linkedin:
-                profile_links.append(f"LinkedIn: {linkedin}")
-            if github:
-                profile_links.append(f"GitHub: {github}")
+            if linkedin.strip():
+                profile_links.append(f"LinkedIn: {linkedin.strip()}")
+            if github.strip():
+                profile_links.append(f"GitHub: {github.strip()}")
+
             links_str = "\n".join(profile_links) if profile_links else "No external links provided."
 
             # Prompt for cold email
