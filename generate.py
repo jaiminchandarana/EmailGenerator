@@ -64,13 +64,11 @@ if st.button("Generate Cold Email"):
             st.json(job)
 
             # Profile details
-            profile_links = []
-            if linkedin.strip():
-                profile_links.append(f"LinkedIn: {linkedin.strip()}")
-            if github.strip():
-                profile_links.append(f"GitHub: {github.strip()}")
+            profile = [{
+                "LinkedIn": linkedin,
+                "GitHub": github
+            }]
 
-            links_str = "\n".join(profile_links) if profile_links else "No external links provided."
 
             # Prompt for cold email
             prompt_email = PromptTemplate.from_template(
@@ -95,7 +93,7 @@ if st.button("Generate Cold Email"):
             
             res_email = chain_email.invoke({
                 "job_description": str(job),
-                "link": str(profile_links),
+                "link": str(profile),
                 "name": name,
                 "position": position
             })
