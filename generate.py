@@ -14,7 +14,7 @@ name = st.text_input("Enter your name", value="Enter your name :")
 position = st.text_input("Enter your current position", value="Enter your designation :")
 linkedin = st.text_input("Enter your LinkedIn profile URL")
 github = st.text_input("Enter your GitHub profile URL")
-groq_api_key = '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'
+groq_api_key = ''
 
 if st.button("Generate Cold Email"):
     if not job_page or not name or not position or not linkedin or not github or not groq_api_key:
@@ -100,4 +100,5 @@ if st.button("Generate Cold Email"):
 
             st.subheader("Generated Cold Email")
             st.write(res_email.content)
+
 
